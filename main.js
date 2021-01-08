@@ -3,7 +3,8 @@ const jsProjects = [
   {
     name: "Calculator app",
     image: "Projects/Calculator/Calculator.png",
-    code: "Projects/Calculator/index.html", 
+    app: "Projects/Calculator/index.html", 
+    code: "Projects/Calculator/app.js", 
     month: 09,
     year: 2020,
     rank: 4,
@@ -12,7 +13,8 @@ const jsProjects = [
   {
     name: "Colour guessing game",
     image: "Projects/ColourGuessingGame/ColourGuessingGame.png",
-    code: "Projects/ColourGuessingGame/index.html",
+    app: "Projects/ColourGuessingGame/index.html",
+    code: "Projects/ColourGuessingGame/app.js",
     month: 10,
     year: 2020,
     rank: 2,
@@ -21,7 +23,8 @@ const jsProjects = [
   {
     name: "Drumkit",
     image: "Projects/Drumkit/Drumkit.png",
-    code: "Projects/Drumkit/index.html",
+    app: "Projects/Drumkit/index.html",
+    code: "Projects/Drumkit/app.js",
     month: 10,
     year: 2020,
     rank: 4,
@@ -30,7 +33,8 @@ const jsProjects = [
   {
     name: "Hangman game",
     image: "Projects/HangmanGame/HangmanGame.png",
-    code: "Projects/HangmanGame/index.html",
+    app: "Projects/HangmanGame/index.html",
+    code: "Projects/HangmanGame/app.js",
     month: 10,
     year: 2020,
     rank: 5,
@@ -39,7 +43,8 @@ const jsProjects = [
   {
     name: "Hex to RGB converter",
     image: "Projects/HexToRGB/HexToRGB.png",
-    code: "Projects/HexToRGB/index.html",
+    app: "Projects/HexToRGB/index.html",
+    code: "Projects/HexToRGB/app.js",
     month: 10,
     year: 2020,
     rank: 4,
@@ -49,7 +54,8 @@ const jsProjects = [
   {
     name: "Stopwatch",
     image: "Projects/Stopwatch/Stopwatch.png",
-    code: "Projects/Stopwatch/index.html",
+    app: "Projects/Stopwatch/index.html",
+    code: "Projects/Stopwatch/app.js",
     month: 09,
     year: 2020,
     rank: 2,
@@ -72,7 +78,9 @@ let jsBall = document.querySelector("#js-ball"),
     sortNewest = document.querySelector("#newest"),
     sortOldest = document.querySelector("#oldest"),
     sortAlpha = document.querySelector("#alpha"),
-    sortEnjoyable = document.querySelector("#enjoyable");
+    sortEnjoyable = document.querySelector("#enjoyable"),
+    jsCodeBtn = document.querySelector("#js-code"),
+    endResultBtn = document.querySelector("#end-result");
 
 
 // Ball bounce 
@@ -137,10 +145,25 @@ let modalFunc = () => {
         let modalTitle = document.querySelector(".modal-title"),
             projectModal = document.querySelector(".project-container"),  
             modalDescr = document.querySelector(".modal-descr");
+
         if (elem.innerText === item.name) {
           modalTitle.innerHTML = item.name;
-          projectModal.innerHTML = `<object data="${item.code}"> </object>`;
+          projectModal.innerHTML = `<object data="${item.app}"> </object>`;
           modalDescr.innerHTML = item.descr;
+                     
+          jsCodeBtn.addEventListener("click", function() {
+           
+            projectModal.innerHTML = `<object data="${item.code}"> </object>`;      
+            this.classList.add("d-none");
+            endResultBtn.classList.remove("d-none");
+            
+          });
+
+          endResultBtn.addEventListener("click", function() {
+            projectModal.innerHTML = `<object data="${item.app}"> </object>`;
+            this.classList.add("d-none");
+            jsCodeBtn.classList.remove("d-none");
+          })   
         }
       });
       modal.classList.toggle("d-none");
@@ -154,6 +177,8 @@ let modalFunc = () => {
 closeModal.addEventListener("click", () => { 
   modal.classList.toggle("d-none");
   body.classList.toggle("stop-scoll");
+  jsCodeBtn.classList.remove("d-none");
+  endResultBtn.classList.add("d-none");
  });
 
 
