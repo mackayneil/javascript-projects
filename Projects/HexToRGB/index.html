@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Colour hex and RGB converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet"> 
+  </head>
+  <body id="body">
+    <header>
+      <h1>Convert colours</h1>
+      <nav id="nav">
+        <ul>
+          <li id="convertHex" class="opacity">Hex to RGB</li>
+          <li id="convertRGB">RGB to Hex</li>
+        </ul>
+      </nav>    
+    </header>
+    <main>
+      <input id="hexInput" class="" type="text" maxlength="6">
+      <div id="rgbInput" class="hide">
+        <input type="number" min="0" max="255" maxlength="3">
+        <input type="number" min="0" max="255" maxlength="3">
+        <input type="number" min="0" max="255" maxlength="3">
+      </div>      
+      <button id="convertHexBtn">Convert to RGB</button>
+      <button id="convertRGBBtn" class="hide">Convert to Hex</button>
+      <h2 id="result"></h2>
+    </main> 
+
+
+   <script src="app.js"></script>
+
+
+  </body>
+</html>

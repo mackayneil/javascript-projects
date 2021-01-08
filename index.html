@@ -1,12 +1,122 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My Javascript projects</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
+<html lang="en">
 
-  </body>
-  <script src="main.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Neil Mackay">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@400;700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2d4958e339.js" crossorigin="anonymous"></script>
+  <title>My Javascript projects | Neil Mackay</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <nav>
+    <div class="mobile-nav">
+      <i id="hamburger-menu" class="fas fa-bars"></i>
+      <p>Neil Mackay</p>
+    </div>    
+    <ul class="desktop-nav">
+      <i class="fas fa-angle-double-right open-nav"></i>
+      <a href="https://mackayneil.github.io/" target="_blank">
+      <li class="list-item">
+        <i class="fas fa-home"></i>
+        <p class="desktop-nav-options d-none"><span>Back to</span><br> <span>portfolio</span></p>
+      </li>
+    </a>
+    <a href="https://mackayneil.github.io/resume/" target="_blank">
+      <li class="list-item">
+        <i class="fas fa-file-alt"></i>
+        <p class="desktop-nav-options d-none">Resumé</p>
+      </li>
+    </a>
+    <a href="mailto:neilmackay01@gmail.com">
+      <li class="list-item">
+        <i class="fas fa-envelope"></i>
+        <p class="desktop-nav-options d-none">Contact</p>
+      </li>
+    </a>
+    </ul>
+  </nav>
+
+  <aside class="mobile-nav-content">
+    <i id="close-menu" class="fas fa-times"></i>
+    <ul>
+      <a href="https://mackayneil.github.io/" target="_blank">
+      <li>
+        <i class="fas fa-home"></i>
+        <p>Back to portfolio</p>
+      </li>
+    </a>
+      <a href="https://mackayneil.github.io/resume/" target="_blank">
+      <li>
+        <i class="fas fa-file-alt"></i>
+        <p>Resumé</p>
+      </li>
+    </a>
+      <a href="mailto:neilmackay01@gmail.com">
+        <li>
+          <i class="fas fa-envelope"></i>
+          <p>Contact</p>
+        </li>
+      </a>
+    </ul>
+  </aside>
+
+  <header>
+    <div class="intro-text">
+      <p>Welcome to my</p>
+      <h1>Javascript project portfolio</h1>
+    </div>
+    <div class="img-container">
+      <img id="js-ball" class="ball-drop" src="images/JS Sphere float.png" alt="Javascript sphere" />
+    </div>
+  </header>
+
+  <main>
+    <button type="button" id="sort-by">
+      <span id="sort-by-text">Sort by </span>
+      <i class="fas fa-angle-down sort-by-caret"></i>
+    </button>
+
+    <div class="sort-by-content d-none">
+      <ul>
+        <li id="newest">Newest</li>
+        <li id="oldest">Oldest</li>
+        <li id="alpha">Alphabetical</li>
+        <li id="enjoyable">Most enjoyable to make</li>
+      </ul>
+    </div>
+
+    <div class="figure-container">
+      <!--  <figure class="figure-project">
+       <div class="figure-img-container">
+          <img src="" alt="" />
+        </div>        
+        <figcaption>Calculator app</figcaption> 
+      </figure>-->
+    </div>
+
+    <article class="modal d-none">
+      <div class="modal-container">
+        <div class="modal-header">
+          <h2 class="modal-title"></h2>
+          <i id="close-modal" class="fas fa-times"></i>
+        </div>
+        <p class="modal-descr"></p>
+        <div class="project-container">
+          <object data=""> </object>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <script src="main.js" type='text/javascript'></script>
+
+</body>
+
 </html>

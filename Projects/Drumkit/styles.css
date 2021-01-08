@@ -1,0 +1,176 @@
+body {
+  margin: 0px;
+}
+.img-container {
+  height: 400px;
+  width: 700px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+#drums-img {
+  width: 700px;
+  height: auto;
+  position: absolute;
+}
+
+#crash-img {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  left: 65px;
+}
+
+#splash-img {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  left: 350px;
+  top: 78px;
+}
+
+#hiHat-img {
+  width: 160px;
+  height: auto;
+  position: absolute;
+  left: 486px;
+  top: 140px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  position: absolute;
+  width: 700px;
+  z-index: 1;
+}
+
+button {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgb(105, 103, 103);
+}
+
+.btn {
+  cursor: pointer;
+}
+
+#E { 
+  grid-area: 1 / 1 / span 1/ span 1;
+  justify-self: center;
+}
+
+#R {
+  grid-area: 1 / 1 / span 1/ span 1;
+  justify-self: end;
+  align-self: end;
+}
+
+#G {
+  grid-area: 2 / 2 / span 1/ span 1;
+  align-self: start;
+  justify-self: end;
+}
+
+#F {
+  grid-area: 2 / 2 / span 1/ span 1;
+  align-self: end;
+  justify-self: center;
+}
+
+#H {
+  grid-area: 2 / 3 / span 1/ span 1;
+  align-self: start;
+  justify-self: center;
+}
+
+#J {
+  grid-area: 2 / 4 / span 1/ span 1;
+  align-self: start;
+  justify-self: start;
+}
+
+#V {
+  grid-area: 3 / 2 / span 1/ span 1;
+  align-self: end;
+  justify-self: center;
+}
+
+#B {
+  grid-area: 3 / 3 / span 1/ span 1;
+  align-self: end;
+  justify-self: start;
+}
+
+#I {
+  grid-area: 1 / 4 / span 1/ span 1;
+  align-self: start;
+  justify-self: center;
+}
+
+#K {
+  grid-area: 2 / 5 / span 1/ span 1;
+  align-self: start;
+  justify-self: center;
+}
+
+.key-ref-container {
+  width: 800px;
+  overflow: hidden;
+}
+
+.slider-container {
+  width: 100%;
+  background-color: rgb(71, 71, 71);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  color: white;
+  font-size: 13px;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  right: 750px;
+  transition: 1s ease-in-out;
+}
+
+.show {
+  right: 0px;
+  transition: 1s ease-in-out;
+}
+
+.key-ref {
+  display: flex;
+  justify-content: start;
+  align-content: center;
+  flex-wrap: wrap;
+  padding-top: 20px; 
+}
+
+.key-ref div {
+  text-align: center;
+  width: 75px;
+}
+
+.key-ref-text {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  padding: 10px 15px;
+  margin: 0px;
+  cursor: pointer;
+}
+
+.key-ref-text:hover {
+  opacity: 0.8;
+}
+
+.rotate {
+  transform: rotate(-5deg);
+  transition: all ease-in-out .1s;
+}
+
+.upDown {
+  transform: rotateX(35deg);
+  transition: all ease-in-out .1s;
+}
