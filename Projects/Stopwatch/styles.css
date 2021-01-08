@@ -1,0 +1,62 @@
+:root {
+  --header-color: rgb(243, 243, 243);
+  --main-bg-color: rgb(107, 107, 107);
+
+  --btn-color: #000;
+  --btn-padding: 8px 15px;
+  --btn-border-radius: 5px;
+  --btn-border: 1px solid #fff;
+  --btn-spacing: 0px 10px;
+  --btn-animation: translateX(0.5px) translateY(1px);
+  --btn-hover: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+h1 {
+  color: var(--header-color);
+}
+
+#stopwatch-container {
+  text-align: center;
+}
+
+button {
+  background-color: var(--btn-color);
+  padding: var(--btn-padding);
+  border-radius: var(--btn-border-radius);
+  border: var(--btn-border);
+  margin: var(--btn-spacing);  
+  color: #fff;
+  cursor: pointer;
+}
+
+#start {
+  color: rgb(64, 199, 64);
+}
+
+#stop {
+  color: rgb(243, 89, 89);
+}
+
+#start:active 
+,#stop:active
+,#reset:active{
+ transform: var(--btn-animation);
+}
+
+#start:hover 
+,#stop:hover
+,#reset:hover{
+ border: var(--btn-hover);
+}
+
+#timer-display {
+  font-size: 2rem;
+}
+
+.hide {
+  display: none;
+}

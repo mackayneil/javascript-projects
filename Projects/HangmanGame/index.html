@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hangman game</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <header>
+      <h1>HANGMAN</h1>
+      <p>Use the buttons below to guess the word</p>
+    </header>
+    <main>
+      <h3>Category: <span id="category">countries</span></h3>
+      <div id="answer">
+        <p>S</p>
+        <p>o</p>
+        <p>u</p>
+        <p>t</p>
+        <p>h</p>
+        <p class="space"></p>
+        <p>A</p>
+        <p>f</p>
+        <p>r</p>
+        <p>i</p>
+        <p>c</p>
+        <p>a</p>
+      </div>
+      <p id="lives">You have 10 lives</p>
+      <section id="hangman-box">
+        <div id="hangman">
+        <div class="hangman-parts hangman-color" id="right-arm"></div>
+        <div class="hangman-parts hangman-color" id="left-arm"></div>
+        <div class="hangman-parts hangman-color" id="right-leg"></div>
+        <div class="hangman-parts hangman-color" id="left-leg"></div>
+        <div class="hangman-parts hangman-color" id="body"></div>
+        <div class="hangman-parts hangman-color" id="head"></div>
+        <div class="hangman-parts hangman-color" id="rope"></div>
+        <div class="hangman-parts hangman-color" id="platform-horizontal"></div>    
+        <div class="hangman-parts hangman-color" id="platform-vertical"></div>       
+        <div class="hangman-parts" id="platform-base"></div>          
+      </div> 
+      </section>
+      <section id="button-container">
+        <button class="letter">a</button>
+        <button class="letter">b</button>
+        <button class="letter">c</button>
+        <button class="letter">d</button>
+        <button class="letter">e</button>
+        <button class="letter">f</button>
+        <button class="letter">g</button>
+        <button class="letter">h</button>
+        <button class="letter">i</button>
+        <button class="letter">j</button>
+        <button class="letter">k</button>
+        <button class="letter">l</button>
+        <button class="letter">m</button>
+        <button class="letter">n</button>
+        <button class="letter">o</button>
+        <button class="letter">p</button>
+        <button class="letter">q</button>
+        <button class="letter">r</button>
+        <button class="letter">s</button>
+        <button class="letter">t</button>
+        <button class="letter">u</button>
+        <button class="letter">v</button>
+        <button class="letter">w</button>
+        <button class="letter">x</button>
+        <button class="letter">y</button>
+        <button class="letter">z</button>
+      </section>
+      <button id="hint-btn" class="btn">Hint</button>
+      <button id="play-again-btn" class="btn">Play again</button>
+      <p id="hint"></p>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
