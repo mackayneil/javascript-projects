@@ -374,6 +374,27 @@ figcaption {
   color: var(--text-color);
 }
 
+.modal-btn {
+  border: 1px solid #44A389;
+  border-radius: 5px;
+  padding: 5px 15px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline;
+  cursor: pointer;
+  color: var(--torquise);
+  z-index: 10;
+  background: transparent;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.modal-btn:hover {
+  color: #fff !important;
+  background-color: var(--torquise);
+  border-color: var(--torquise);
+}
+
 .project-container {
   width: 100%;
   height: 100%;
