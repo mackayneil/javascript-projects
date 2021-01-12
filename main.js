@@ -8,7 +8,7 @@ const jsProjects = [
     month: 09,
     year: 2020,
     rank: 4,
-    descr: "Based off of the Mac calculator, I added the ability for the user to change the colours. I converted this project into an app for my Mac using Electron.",
+    descr: "I used Electron to create an app inspired by the Mac calculator. I imporoved the design by allowing users to customise colours.",
   },
   {
     name: "Colour guessing game",
