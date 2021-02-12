@@ -1,0 +1,145 @@
+:root {
+  --lato-typeface: 'Lato', sans-serif;
+  --torquise: #44A389;
+  --greyBG: #F8F8F8;
+  --whiteBG: #FFFFFF;
+  --text-color: #212529; 
+}
+/* General */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--lato-typeface);
+  padding: 20px 100px
+}
+
+header {
+  display: none;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 150px 1fr;
+}
+
+.recipe-title {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+h2 {
+  color: var(--text-color);
+  font-weight: normal;
+  margin: 0;
+}
+
+header p {
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+header img {
+  height: 400px;
+  width: auto;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
+  border-radius: 10px;
+  margin-left: auto;
+}
+
+.ingredients {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+@media screen and (max-width: 800px) {
+  header img {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  body {
+    font-family: var(--lato-typeface);
+    padding: 20px 50px
+  }
+  header {
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 1fr 1fr
+  }
+  .recipe-title {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+  }
+  header img {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .ingredients {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }
+  header img {
+    height: 250px;
+  }
+}
+
+
+
+h3 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+header ul {
+  font-size: 12px;
+  padding-left: 12px;
+}
+
+.quantity {
+  font-weight: lighter;
+}
+
+main {
+  display: none;
+}
+
+main ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+main ul li {
+  padding-bottom: 20px;
+  font-weight: lighter;
+}
+
+.step-num {
+  font-weight: normal;
+}
+
+button {
+  border: 1px solid #44A389;
+  border-radius: 5px;
+  padding: 5px 15px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline;
+  cursor: pointer;
+  color: #fff;
+  z-index: 10;
+  background: var(--torquise);
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+button:hover {
+  color: var(--torquise) !important;
+  background-color: #fff;
+  border-color: var(--torquise);
+}
+
+section {
+  text-align: center;
+  display: block;
+}

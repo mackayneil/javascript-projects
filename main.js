@@ -49,8 +49,7 @@ const jsProjects = [
     year: 2020,
     rank: 4,
     descr: "I found myself using a website to convert Hex to RGB and vice versa, so I decided to make an app instead. This project was also a very rewarding one to complete as it involved quite a bit of different JS code.",
-  }
-  ,
+  },
   {
     name: "Stopwatch",
     image: "Projects/Stopwatch/Stopwatch.png",
@@ -60,6 +59,16 @@ const jsProjects = [
     year: 2020,
     rank: 2,
     descr: "A simple stopwatch made by using if/else statements, event listeners, set interval and clear interval.",
+  },
+  {
+    name: "Meal generator",
+    image: "Projects/MealGenerator/MealGenerator.png",
+    app: "Projects/MealGenerator/index.html",
+    code: "Projects/MealGenerator/app.js",
+    month: 02,
+    year: 2021,
+    rank: 5,
+    descr: "A random meal generator using a third party API and fetch to retrieve and populate the data",
   }
 ];
 
